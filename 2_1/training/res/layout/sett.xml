@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settModeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Режим:"
+        android:textSize="9pt" />
+
+    <Spinner
+        android:id="@+id/settModeSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/settIntTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Интервал (в минутах):"
+        android:textSize="9pt" />
+
+    <EditText
+        android:id="@+id/settIntEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="9pt" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.11" >
+
+        <Button
+            android:id="@+id/settChSchemaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onSetSchemaClick"
+            android:text="Изменить схему упражнений"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/settChProButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/settChSchemaButton"
+            android:layout_alignRight="@+id/settChSchemaButton"
+            android:layout_below="@+id/settChSchemaButton"
+            android:layout_marginTop="33dp"
+            android:text="Изменить схему категорий"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/settSetIntButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="Установить интервал"
+            android:textSize="7pt" />
+
+    </RelativeLayout>
+
+</LinearLayout>

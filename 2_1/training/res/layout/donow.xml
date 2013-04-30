@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="120dp" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Движение плечами" android:textSize="8pt" android:enabled="true" android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/doImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/plechi" android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/doTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:text="Вращайте правую руку возле корпуса как винт самолёта. Сделайте это 4 раза по часовой стрелке, 4 раза против часовой и расслабьтесь на несколько секунд. Повторите упражнение с левой рукой." android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/skipAllButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Завершить тренировку"
+        android:textSize="7pt" />
+
+    <Button
+        android:id="@+id/doSkipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipAllButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:text="Пропустить"
+        android:textSize="7pt" android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/doNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/doSkipButton"
+        android:layout_alignBottom="@+id/doSkipButton"
+        android:layout_alignParentRight="true"
+        android:text="Следующее"
+        android:textSize="7pt" android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/doImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="Упражнений для выполнения не найдено!" android:textSize="11pt"/>
+
+</RelativeLayout>

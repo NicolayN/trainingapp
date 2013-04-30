@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mainTitle">Hello, this is main menu!</string>
+    <string name="app_name">Training</string>
+    <color name="Yellow">#FFFF00</color>
+
+</resources>

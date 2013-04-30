@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Главное меню"
+        android:textSize="17pt" />
+
+    <Button
+        android:id="@+id/doNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:onClick="onDoNowClick"
+        android:text="Выполнить сейчас!"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/settButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doNowButton"
+        android:layout_alignRight="@+id/doNowButton"
+        android:layout_below="@+id/doNowButton"
+        android:layout_marginTop="30dp"
+        android:onClick="onSettClick"
+        android:text="Настройки"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/statButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settButton"
+        android:layout_alignRight="@+id/settButton"
+        android:layout_below="@+id/settButton"
+        android:layout_marginTop="32dp"
+        android:onClick="onStatClick"
+        android:text="Статистика"
+        android:textSize="9pt" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:onClick="onStopClick"
+        android:text="Остановить таймер"
+        android:textSize="9pt" />
+
+</RelativeLayout>
